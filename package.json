@@ -1,0 +1,31 @@
+{
+  "name": "teste_backend_appmoove",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dennisurtubia/teste_backend_appmoove",
+  "author": "dennisurtubia <dennisurtubia@alunos.utfpr.edu.br>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "dev:debug": "nodemon --inspect src/server.js",
+    "lint": "eslint --fix src/ ",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "celebrate": "^10.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.20.1",
+    "mysql2": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4",
+    "supertest": "^4.0.2"
+  }
+}
