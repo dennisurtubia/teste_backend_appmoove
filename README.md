@@ -41,3 +41,9 @@
  ```bash
     $ yarn test 
 ```
+
+### Validações
+    As validações dos campos das requisições foram implementadas com base no SQL fornecido (tipo, requerido).
+    Em forma de Middleware, caso ocorra um erro de validação, é retornado uma mensagem.
+    Cada dominio da aplicação possui um respectivo arquivo de validações encontrado em /src/validations.
+    O middleware que caputra o erro e retorna o mesmo se encontra em /src/middlewares/validations.js.
