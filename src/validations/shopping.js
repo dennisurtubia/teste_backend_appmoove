@@ -5,7 +5,7 @@ module.exports = {
     return celebrate({
       body: Joi.object().keys({
         produto_id: Joi.number().required(),
-        qtde_comprada: Joi.number().required(),
+        qtde_comprada: Joi.number().min(1).required(),
         cartao: Joi.object().required().keys({
           titular: Joi.string().required(),
           numero: Joi.string().required(),
