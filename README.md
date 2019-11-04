@@ -3,13 +3,12 @@
 ## Autor: Dennis Felipe Urtubia
 
 ### Tecnologias utilizadas:
-    - Docker: Utiliza docker compose para conteinerização do banco de dados (MySQL);
-    - Express: Servidor HTTP;
-    - Knex: Querybuilder para SQL;
-    - Axios: Requisição para a validação do cartão de crédito; 
-    - Celebrate e Joi: Validação dos campos das requisições funcionando como Middleware das rotas;
-    - Jest e Supertest: Teste das rotas;
-    - Eslint: Linter configurado no padrão airbnb;
+    - Docker: utiliza Docker Compose para conteinerização do banco de dados (MySQL);
+    - Express: servidor HTTP;
+    - Knex: querybuilder para SQL;
+    - Celebrate e Joi: validação dos campos das requisições funcionando como Middleware das rotas;
+    - Jest e Supertest: teste das rotas;
+    - Eslint: linter configurado no padrão airbnb;
 
 ### Como executar:
 1. Faça o clone do projeto:
@@ -34,7 +33,7 @@
 
 ### Testes:
     Os testes foram implementados com base em cada uma das funções na qual esta API apresenta. Foram testados casos de SUCESSO e ERRO.
-    - O supertest provê uma ótima abstração para testes HTTP.
+    - O supertest provê uma ótima abstração para testes em rotas HTTP.
     - As configurações de teste são encontradas no arquivo "jest.config.js".
 
 - Para executar os testes basta executar o comando:
