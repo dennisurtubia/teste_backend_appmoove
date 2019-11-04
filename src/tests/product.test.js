@@ -63,7 +63,7 @@ describe('Teste para rota DELETE: /api/produtos/productId', () => {
 
     expect(res.status).toBe(204);
   });
-  test('Testa o caso de erro para esta rota quando o ID do produto fornecido não é valido', async () => {
+  test('Testa o caso de erro para esta rota quando o ID do produto fornecido não é válido', async () => {
     const res = await request(app).delete('/api/produtos/12312312312312');
 
     expect(res.status).toBe(400);
