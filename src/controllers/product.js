@@ -89,10 +89,9 @@ module.exports = {
     try {
       const { productId } = req.params;
 
-      await knex('transacoes').where('produto_id', productId).del();
-
-      const qtdRemoved = await knex('produtos').where('id', productId).del();
-      if (!qtdRemoved) throw new Error();
+      await knex('produtos')
+        .where('id', productId)
+        .update({ data_exclusao: knex.fn.now(), qtde_estoque: 0 });
 
       res.status(204).json({
         message: 'Produto excluído com sucesso',
